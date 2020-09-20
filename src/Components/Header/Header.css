@@ -1,0 +1,48 @@
+.header{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../../images/location/Rectangle\ 1.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+      
+}
+h1{
+    font-size: 15px;
+    color: rgb(211, 16, 16);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.travel-logo{
+    height:60px;
+    width:100px;
+    filter:brightness(600%)
+}
+div{
+    font-family:'Montserrat';
+    font-weight:bold;
+      
+}
+
+.navbarr{
+    margin-bottom:100px;
+    color:white;
+    width:90%;
+    margin-left:60px;
+    
+}
+.place-cards{
+    border-radius:8px;
+    width:200px;
+    height:400px;
+}
+.travel-place-cards{
+    margin-bottom:280px;
+}
+
+.header-nav{
+    margin-bottom:100px;
+}
