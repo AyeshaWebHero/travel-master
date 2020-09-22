@@ -17,24 +17,24 @@ const Login = () => {
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/" } };
 
-    // Checks if app already initialized
-    if (firebase.apps.length == 0) {
+
+    if (firebase.apps.length === 0) {
         firebase.initializeApp(firebaseConfig)
     }
 
     const googleProvider = new firebase.auth.GoogleAuthProvider();
     const fbProvider = new firebase.auth.FacebookAuthProvider();
 
-    // Sign In Method
+    // Sign In 
     const handleGoogleSignIn = () => {
         firebase.auth().signInWithPopup(googleProvider)
             .then(result => {
                 const createdUser = result.user;
-                const newUserInfo = { ...user } //  instance of user object
+                const newUserInfo = { ...user } 
                 newUserInfo.name = createdUser.displayName;
                 newUserInfo.email = createdUser.email
-                setUser(newUserInfo) // Update state
-                history.replace(from); //protected route after login
+                setUser(newUserInfo) 
+                history.replace(from); 
             })
             .catch(function (error) {
                 const newUserInfo = { ...user } 
@@ -52,7 +52,7 @@ const Login = () => {
                     newUserInfo.success = "Your account was created successfully!"
                     newUserInfo.name = `${user.first} ${user.last}`
                     setUser(newUserInfo)
-                    updateUserName(`${user.first} ${user.last}`) // Passing the name 
+                    updateUserName(`${user.first} ${user.last}`) 
                     verifyEmail()
                     history.replace(from)
                 })
@@ -147,7 +147,7 @@ const Login = () => {
             isFormValid = e.target.value.length > 5
             if (e.target.value.length <= 5) {
                 const newUserInfo = { ...user }
-                newUserInfo.error = "Password can't be less than 6 characters"
+                newUserInfo.error = "Password cannot be less than 6 characters"
                 setUser(newUserInfo)
             }
         }
@@ -183,7 +183,7 @@ const Login = () => {
                                     <label htmlFor="remember">Remember Me</label>
                                 </div>
                                 <div>
-                                    <p onClick={resetPassword} className="login__forget">Forget Password</p>
+                                    <p onClick={resetPassword} className="login__forget">Forgot your Password?</p>
                                 </div>
                             </div>
                         }

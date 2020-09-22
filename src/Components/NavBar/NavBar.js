@@ -1,10 +1,9 @@
 import React, { useContext } from 'react';
-import { Form, Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { UserContext } from '../../App';
 import './NavBar.css';
 import Logo from '../../images/Logo.png'
-import { Link } from 'react-router-dom';
-import { Button, FormControl } from '@material-ui/core';
+
 
 const NavBar = () => {
 
@@ -20,11 +19,11 @@ const NavBar = () => {
             <Nav className="mr-auto">
       
             </Nav>
-            <Nav.Link style={{color: 'black'}} href="#home">News</Nav.Link>
-            <Nav.Link style={{color: 'black'}} href="#link">Destination</Nav.Link>
-            <Nav.Link style={{color: 'black'}} href="#link">Blog</Nav.Link>
-            <Nav.Link style={{color: 'black'}} href="#link">Contact</Nav.Link>
-            <Nav.Link style={{color: 'black', fontWeight:'bold', color:'black'}} href="#link">{loggedInUser.name}</Nav.Link>
+            <Nav.Link style={{color: 'black'}} href="/news">News</Nav.Link>
+            <Nav.Link style={{color: 'black'}} href="/destination">Destination</Nav.Link>
+            <Nav.Link style={{color: 'black'}} href="/blog">Blog</Nav.Link>
+            <Nav.Link style={{color: 'black'}} href="/contact">Contact</Nav.Link>
+            <Nav.Link style={{color: 'black', fontWeight:'bold'}} href="#link">{loggedInUser.name}</Nav.Link>
         </Navbar.Collapse>
     </Navbar>
             

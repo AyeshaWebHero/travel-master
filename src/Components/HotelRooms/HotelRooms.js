@@ -1,6 +1,6 @@
 import React from 'react';
-import star from '../../images/Icon/star_1_.png'
-import './HotelRooms.css'
+import star from '../../images/Icon/star_1_.png';
+import './HotelRooms.css';
 
 const HotelRooms = (props) => {
 

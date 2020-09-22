@@ -55,7 +55,7 @@ export const handleGoogleSignIn = () => {
       }
       return signedOutUser;
     }).catch(err => {
-      // An error happened.
+      // error 
     });
   }
 

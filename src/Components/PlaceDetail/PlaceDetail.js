@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Col, Form, Row } from 'react-bootstrap';
+import {Form } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import fakeData from '../../fakeData/fakeData';
 import NavBarDark from '../NavBarDark/NavBarDark';
 import TimePicker from '../TimePicker/TimePicker';
-import Cox from '../../images/location/Cox.png';
+
 import './PlaceDetail.css'
 import { PlaceContext } from '../../App';
 
@@ -12,12 +12,8 @@ import { PlaceContext } from '../../App';
 const PlaceDetail = () => {
 
     const {placeId} = useParams()
-   
-    // console.log(fakeData)
     const [place,setPlace] = useContext(PlaceContext);
-
     setPlace(placeId);
-
 
     const [selectedPlaces,setSelectedPlaces]=useState({})
     const {name, description}=selectedPlaces

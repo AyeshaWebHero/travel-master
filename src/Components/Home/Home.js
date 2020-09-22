@@ -5,7 +5,7 @@ import './Home.css'
 
 const Home = (props) => {
 
-    const {key,name,description} = props.place
+    const {key,name} = props.place;
    
     const imagee= props.place.image
 

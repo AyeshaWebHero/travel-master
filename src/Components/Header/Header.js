@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Header.css'
 import Logo from '../../images/Logo.png'
 import fakeData from '../../fakeData/fakeData';
-import { Button, Card, FormControl, responsiveFontSizes } from '@material-ui/core';
+import { Button, FormControl } from '@material-ui/core';
 import { Form, Nav, Navbar } from 'react-bootstrap';
 import Home from '../Home/Home';
 import { Link } from 'react-router-dom';
@@ -24,14 +24,12 @@ const Header = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
                            
                             <Nav className="mr-auto title">
-                            
-                                
                             </Nav>
                             
-                               <Nav.Link style={{color: 'white'}} href="#home">News</Nav.Link>
-                                <Nav.Link style={{color: 'white'}}href="#link">Destination</Nav.Link>
-                                <Nav.Link style={{color: 'white'}}href="#link">Blog</Nav.Link>
-                                <Nav.Link style={{color: 'white'}} href="#link">Contact</Nav.Link>
+                               <Nav.Link style={{color: 'white'}} href="/news">News</Nav.Link>
+                                <Nav.Link style={{color: 'white'}}href="/destination">Destination</Nav.Link>
+                                <Nav.Link style={{color: 'white'}}href="/blog">Blog</Nav.Link>
+                                <Nav.Link style={{color: 'white'}} href="/contact">Contact</Nav.Link>
                             <Link to="/login"><Button style={{fontWeight:'bold',backgroundColor: '#F9A51A',width: '104px',height: '44px',borderRadius: '5px',padding: '12px 29px'}}>Login</Button></Link>
                             
                             
