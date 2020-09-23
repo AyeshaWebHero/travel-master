@@ -205,7 +205,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#818a91;
+  /* background-color:#91d4f5;  */
+  /* color:#818a91; */
+  color:#0c0f11;
   font-size:16px;
   display:inline-block;
   line-height:44px;
@@ -242,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 {
   background-color:#007bb6
 }
-.social-icons a.dribbble:hover
+.social-icons a.youtube:hover
 {
   background-color:#ea4c89
 }
