@@ -23,7 +23,7 @@ const NavBar = () => {
             <Nav.Link style={{color: 'black'}} href="/destination">Destination</Nav.Link>
             <Nav.Link style={{color: 'black'}} href="/blog">Blog</Nav.Link>
             <Nav.Link style={{color: 'black'}} href="/contact">Contact</Nav.Link>
-            <Nav.Link style={{color: 'black', fontWeight:'bold'}} href="#link">{loggedInUser.name}</Nav.Link>
+            <Nav.Link style={{color: 'black', fontWeight:'bold'}} href="#">{loggedInUser.name}</Nav.Link>
         </Navbar.Collapse>
     </Navbar>
             

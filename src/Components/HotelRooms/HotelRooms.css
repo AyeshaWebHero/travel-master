@@ -1,19 +1,22 @@
 .room{
-    width: 400px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
 }
+
+
 .book-room-details{
     color:black;
+    
 }
 .book-room{
-    padding:10px;
+    padding:20px;
     color:black;
 }
 .room-details{
-    margin:10px;
+    margin:60px;
 }
 div{
-    font-family:'Montserrat';
-    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold; color: brown;
     background-size:cover;
 }

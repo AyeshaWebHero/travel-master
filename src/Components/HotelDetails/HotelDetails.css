@@ -5,6 +5,11 @@
 .book-room-details{
     color:black;
 }
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000;
+}
 .book-room{
     padding:10px;
     color:black;

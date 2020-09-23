@@ -22,10 +22,10 @@ const NavBarDark = () => {
                             
                                 
                             </Nav>
-                            <Nav.Link style={{color: 'white'}} href="#home">News</Nav.Link>
-                                <Nav.Link style={{color: 'white'}}href="#link">Destination</Nav.Link>
-                                <Nav.Link style={{color: 'white'}}href="#link">Blog</Nav.Link>
-                                <Nav.Link style={{color: 'white'}} href="#link">Contact</Nav.Link>
+                            <Nav.Link style={{color: 'white'}} href="/news">News</Nav.Link>
+                                <Nav.Link style={{color: 'white'}}href="/destination">Destination</Nav.Link>
+                                <Nav.Link style={{color: 'white'}}href="/blog">Blog</Nav.Link>
+                                <Nav.Link style={{color: 'white'}} href="/contact">Contact</Nav.Link>
                             <Link to="/login"><Button style={{fontFamily:'Montserrat',fontWeight:'bold',border: '1px solid grey',color:'black',backgroundColor: '#F9A51A',width: '104px',height: '44px',borderRadius: '5px',padding: '12px 29px'}}>Login</Button></Link>
                             
                             

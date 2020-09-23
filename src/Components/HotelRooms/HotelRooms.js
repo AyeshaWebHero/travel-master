@@ -12,14 +12,11 @@ const HotelRooms = (props) => {
             
              <div className="row room-details" >
                     <div className="col-6"> 
-                    <img className="img-fluid room" src={img} alt='hotel-room'></img> 
+                    <img className="room" src={img} alt='hotel-room'></img> 
                     </div>
-                    <div className="col-6"> 
-                    <h4>{title}</h4>
-                    <p>{capacity}</p>
-                    <p>{type}</p>
-                    <p>{cancellation}</p>
-                    <p><img src={star} alt='star'></img> {rating}(20) | ${rate}/night</p>
+                    <div className="col-6" style={{textAlign:'right'}}> 
+                    <h4>{title}</h4>{capacity}|{type}|{cancellation}
+                    <p style={{textAlign:'right'}}> ${rate}/day | <img src={star} alt='star'></img> {rating}(30) </p>
                     </div> 
                 </div>
                

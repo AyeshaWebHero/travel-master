@@ -41,7 +41,7 @@ const PlaceDetail = () => {
                         <Form className="form">
                             <Form.Group>
                                 <Form.Label style={{color:'grey'}}>Origin</Form.Label>
-                                <Form.Control style={{fontWeight:'bold', color:'black'}} value="" type="origin"/>
+                                <Form.Control style={{fontWeight:'bold', color:'black'}} value="Chittagong" type="origin"/>
                             </Form.Group>
 
                             <Form.Group>

@@ -136,7 +136,7 @@ const Login = () => {
         auth.sendPasswordResetEmail(emailAddress)
             .then(() => {
                 const newUserInfo = { ...user }
-                newUserInfo.success = 'A password reset email has been sent to your email address'
+                newUserInfo.success = 'A password reset mail has been sent to your email address'
                 setUser(newUserInfo)
             })
     }
@@ -147,7 +147,7 @@ const Login = () => {
             isFormValid = e.target.value.length > 5
             if (e.target.value.length <= 5) {
                 const newUserInfo = { ...user }
-                newUserInfo.error = "Password cannot be less than 6 characters"
+                newUserInfo.error = "Password cannot be less than 6 characters!!"
                 setUser(newUserInfo)
             }
         }

@@ -1,7 +1,6 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
-import Button from 'react-bootstrap/Button';
 import './Contacts.css'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -9,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 const Contacts = () => {
   return (
     <div className="container text-center">
+      <h1>Our traveller team to build this awesome tours and apps to help you travel more...</h1>
     <Row>
     <Col xs={12}>
    <CardDeck>

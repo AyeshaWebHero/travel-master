@@ -17,6 +17,7 @@ import Blog from "./Components/Blog/Blog";
 import Contacts from "./Components/Contacts/Contacts";
 import Destination from './Components/Destination/Destination';
 
+import '@goongmaps/goong-geocoder-react/dist/goong-geocoder.css';
 export const MyContext = createContext();
 
 
@@ -50,6 +51,7 @@ function App() {
 
           <Route path="/news" component={News}>
             <News></News>
+
           </Route>
 
           <Route path="/destination">
@@ -69,7 +71,8 @@ function App() {
            </Route>
            
            <PrivateRoute path="/hotelDetails">
-             <HotelDetails></HotelDetails>
+            <HotelDetails></HotelDetails>
+
             </PrivateRoute>
             
            

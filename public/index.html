@@ -11,6 +11,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link href='https://unpkg.com/@goongmaps/goong-geocoder@1.0.5/dist/goong-geocoder.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Grandstander:wght@500&family=Ranchers&display=swap" rel="stylesheet">
@@ -25,6 +26,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="/css/video-react.css" />
     <link
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -65,6 +67,7 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118103.46961027698!2d91.74982735001818!3d22.325919306644526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8a64095dfd3%3A0x5015cc5bcb6905d9!2sChattogram!5e0!3m2!1sen!2sbd!4v1600624014313!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 
+
 <footer class="new_footer_area bg_color">
   <div class="new_footer_top">
       <div class="container">
@@ -72,7 +75,7 @@
               <div class="col-lg-3 col-md-6">
                   <div class="f_widget company_widget wow">
                       <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                      <p>Don’t miss any updates of our new templates and extensions!</p>
+                      <p>Don’t miss any updates of our new travel stories and group tours!</p>
                       <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                           <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                           <button class="btn btn_get btn_get_two btn btn-danger" type="submit">Subscribe</button>
@@ -107,17 +110,54 @@
                       </ul>
                   </div>
               </div>
-              
+              <div class="footer_bg">
+                <div class="footer_bg_two"></div>
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_one"></div>
+            </div>
+        </div>
+
           </div>
       </div>
      
   </div>
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2020----All Rights Reserved by 
+     <a href="https://ayeshawebhero.github.io/ayesha-personal-website/">Ayesha Nusrat</a>.
+        </p>
+      </div>
 
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="https://www.instagram.com/i_am_nova_ayesha/"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/AyeshaNusrat5/"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="http://ayeshanova.blogspot.com/"><i class="fa fa-youtube"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/in/ayesha-nusrat-1447191b1/"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
 </footer>
 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzkPl1kKzXXzomiBuemygkiZuf8vLRTKc&callback=initMap"
+  type="text/javascript">
+</script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.21.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.21.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzkPl1kKzXXzomiBuemygkiZuf8vLRTKc&callback=initMap"
-  type="text/javascript"></script>
   </body>
 </html>
